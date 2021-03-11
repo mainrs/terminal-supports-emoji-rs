@@ -1,16 +1,13 @@
-# terminal-link
+# terminal-supports-emoji
 
-> Create clickable links inside your terminal.
+> Check if the current terminal supports emojis.
 
 ## Usage
 
 ```rust
-use terminal_link::Link;
+use terminal_supports_emoji::{supports_emoji, Stream);
 
-fn main() {
-    let link = Link::new("https://duckduckgo.com");
-    println!("{}", crab);
-}
+let _ = supports_emoji(Stream::Stdout);
 ```
 
 #### License
