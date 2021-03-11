@@ -9,3 +9,4 @@ edition = "2018"
 
 [dependencies]
 atty = "0.2.14"
+serde = { version = "1.0.124", features = ["derive"], optional = true }

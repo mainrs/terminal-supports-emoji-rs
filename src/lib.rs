@@ -2,6 +2,7 @@ pub use atty::Stream as AttyStream;
 
 /// Possible stream sources.
 #[derive(Clone, Copy, Debug, Eq, Hash, PartialEq)]
+#[cfg_attr(feature = "serde", derive(serde::Deserialize, serde::Serialize))]
 pub enum Stream {
     /// The standard error stream.
     Stderr,
