@@ -10,3 +10,6 @@ edition = "2018"
 [dependencies]
 atty = "0.2.14"
 serde = { version = "1.0.124", features = ["derive"], optional = true }
+
+[target.'cfg(all(unix, not(target_os = "macos")))'.dependencies]
+lazy_static = "1.4.0"
